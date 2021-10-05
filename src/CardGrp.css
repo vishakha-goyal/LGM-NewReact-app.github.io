@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.imgdiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgdiv img{
+    display: block;
+    width: 80%;
+    height: 90vh;
+
+}
+
+.imgdiv h2{
+    margin-top: -10rem;
+    letter-spacing: .4rem;
+    color: #ff0077;
+}
+
+.card{
+    position: relative;
+    width: 70%;
+    height: 20rem;
+    border-radius: .3rem;
+    border-style: none;
+    margin: auto;
+    background: url('https://p1.pxfuel.com/preview/152/677/311/abstract-geometric-wallpaper-background-shapes-creative-royalty-free-thumbnail.jpg');
+    box-shadow:  27px 20px 54px #cccccc,
+                -27px 27px 54px #ffffff;
+    transition: ease-in-out 0.2s;
+    
+} 
+
+.card:hover{
+    transform: translatey(-0.2rem);
+}
+
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(to right, #ffd452, #F37335);
+    border-radius: 0 0 .3rem .3rem;
+
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(to right, #ffd152, #f33594);
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+
+.card img{
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    transition: ease-in-out 0.2s;
+    border: .15rem solid #ffc252;
+
+}
+
+
+.card .content h2{
+    color: #faebd7;
+    font-size: 1.6rem;
+    letter-spacing: .10rem;
+}
+
+.card .content a{
+    color: #f8f8f8;
+    font-size: 1.2rem;
+    letter-spacing: .02rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+    .card .content h2{
+        font-size: 1.2rem;
+    }
+    .card .content h5{
+        font-size: 1rem;
+    }
+}
